@@ -286,17 +286,6 @@ app_ui <- function(request) {
                 )
               )
             ),
-          column(
-                  width = 7,
-                  img(
-                    src = "www/eces_org_eg_logo.png",
-                    width = "155",
-                    height = "77"
-                  ),
-                  align = "left"
-                )
-              )
-            ),
             hr(class = "custom-hr-thick"),
             conditionalPanel(
               condition = "input.submit_button != 0",
