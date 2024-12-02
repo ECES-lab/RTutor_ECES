@@ -20,7 +20,7 @@ app_ui <- function(request) {
     # Add color to UI
     tags$head(tags$style(HTML("
       /* navbar */
-      .navbar {background-color: #C1E2BE;border-color: #90BD8C; color: #181818;font-weight: bold;}
+      .navbar {background-color: #23b0ce;border-color: #22b3ce; color: #ffffff;font-weight: bold;}
 
       /* tabs */
       .navbar-default .navbar-nav > li > a {background-color: #C1E2BE;
