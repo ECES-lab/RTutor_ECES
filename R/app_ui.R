@@ -20,34 +20,34 @@ app_ui <- function(request) {
     # Add color to UI
     tags$head(tags$style(HTML("
       /* navbar */
-      .navbar {background-color: #23b0ce;border-color: #22b3ce; color: #ffffff;font-weight: bold;}
+      .navbar {background-color: #1a73e8;border-color: #155bb5; color: #ffffff;font-weight: bold;}
 
       /* tabs */
-      .navbar-default .navbar-nav > li > a {background-color: #C1E2BE;
-        border-color: #9AC596;color: #181818;font-size: 16px;}
+      .navbar-default .navbar-nav > li > a {background-color: #e8f1fd;
+        border-color: #c1d9f7;color: #1a1a1a;font-size: 16px;}
 
       /* active tab */
       .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus,
-      .navbar-default .navbar-nav > .active > a:hover {background-color: #A0BB9E;color: #181818;font-weight: bold;}
+      .navbar-default .navbar-nav > .active > a:hover {background-color: #d0e4f7;color: #1a1a1a;font-weight: bold;}
 
       /* sidebar panel */
-      .well {background-color: #C1E2BE;border-color: #90BD8C;}
+      .well {background-color: #e8f1fd;border-color: #c1d9f7;}
 
       /* selectInput & actionButton */
       .custom-select-input, .custom-action-button, .custom-download-button
-      {font-size: 24px;color: #000;background-color: #C1E2BE;border-color: #90BD8C;}
+      {font-size: 24px;color: #1a1a1a;background-color: #e8f1fd;border-color: #c1d9f7;}
 
       /* selectInput extra customization */
-      .selectize-input, .selectize-dropdown {background-color: #F6FFF5 !important;
-        border-color: #90BD8C !important;color: #000 !important; font-size: 16px;}
+      .selectize-input, .selectize-dropdown {background-color: #e8f1fd  !important;
+        border-color: #c1d9f7 !important;color: #1a1a1a !important; font-size: 16px;}
 
       /* horizontal line (hr()) */
-      .custom-hr{border-top: 1px solid #90BD8C;}
-      .custom-hr-thick{border-top: 3px solid #90BD8C;}
+      .custom-hr{border-top: 1px solid #c1d9f7;}
+      .custom-hr-thick{border-top: 3px solid #c1d9f7;}
 
       /* textarea, textInput, numericInput */
       textarea, input[type = 'text'], input[type='number']
-      {width: 100%;background-color: #F6FFF5;border-color: #90BD8C;font-size: 16px;}
+      {width: 100%;background-color: #e8f1fd;border-color: #c1d9f7;font-size: 16px;}
 
       /* tippy this pop-ups */
       .tippy-content {font-size: 15px !important;}
