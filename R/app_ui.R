@@ -53,9 +53,9 @@ app_ui <- function(request) {
       .tippy-content {font-size: 15px !important;}
 
       /* policy styles */
-      .policy {background-color: #ededed;background-size: cover;background-position: center;
+      .policy {background-color: #e8f1fd;background-size: cover;background-position: center;
       min-height: 500px;margin: 0 !important;padding-top: 0px;display: flex;justify-content: center;
-      border: 50px solid #bedbb7;color: #262626;text-align: left;flex-direction: column;}
+      border: 50px solid #c1d9f7;color: #1a1a1a;text-align: left;flex-direction: column;}
       .policy h1 {font-size: 40px;padding-top: 90px;margin-left: 125px;font-weight: bold;}
       .policy h2 {font-size: 25px;padding-top: 40px;margin-left: 125px;font-weight: bold;}
       .policy h3 {font-size: 20px;padding-top: 20px;margin-left: 125px;font-weight: bold;}
@@ -140,7 +140,7 @@ app_ui <- function(request) {
                 actionButton("data_edit_modal", "Data Types"),
                 align = "left",
                 tags$head(tags$style(
-                  "#data_edit_modal{font-size: 18px;color: #000;background-color: #F6FFF5;border-color: #90BD8C}"
+                  "#data_edit_modal{font-size: 18px;color: #000;background-color: #F6FFF5;border-color: #c1d9f7}"
                 ))
               )
             ),
@@ -168,7 +168,7 @@ app_ui <- function(request) {
                   div(
                     actionButton("submit_button", strong("Submit")),
                     tags$head(tags$style(
-                      "#submit_button{font-size: 18px;color: blue;background-color: #F6FFF5;border-color: #90BD8C;}"
+                      "#submit_button{font-size: 18px;color: blue;background-color: #F6FFF5;border-color: #c1d9f7;}"
                     )),
                     tippy::tippy_this(
                       "submit_button",
@@ -180,7 +180,7 @@ app_ui <- function(request) {
                     # Reset Button
                     actionButton(inputId = "reset_button", label = strong("Reset")),
                     tags$head(tags$style(
-                      "#reset_button{font-size: 18px;color: red;background-color: #F6FFF5;border-color: #90BD8C;}"
+                      "#reset_button{font-size: 18px;color: red;background-color: #F6FFF5;border-color: #c1d9f7;}"
                     )),
                     tippy::tippy_this(
                       "reset_button",
