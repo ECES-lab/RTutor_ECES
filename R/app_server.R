@@ -26,6 +26,7 @@ app_server <- function(input, output, session) {
   }
   if (file.exists("api_key.txt")) {
   api_key <- readLines("api_key.txt", warn = FALSE)
+  print(api_key)
   }
 
   if(dev.cur() == 1){
