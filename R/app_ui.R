@@ -195,7 +195,7 @@ app_ui <- function(request) {
             #     width = 4,
             #     actionButton("api_button", "Settings"),
             #     tags$head(tags$style(
-            #           "#api_button{color: black;background-color: #F5F8FF;border-color: #90BD8C;}"
+            #           "#api_button{color: black;background-color: #F5F8FF;border-color: #8CA0BD;}"
             #     )),
             #   ),
             #   column(
@@ -221,7 +221,7 @@ app_ui <- function(request) {
                       #ask_question {
                         width: 100%;
                         background-color: #F5F8FF;
-                        border-color: #90BD8C;
+                        border-color: #8CA0BD;
                       }
                     "))
                   ),
@@ -269,7 +269,7 @@ app_ui <- function(request) {
                   width = 5,
                   actionButton("first_user", strong("Quick start"), class = "first-user"),
                   tags$head(tags$style(HTML("
-                    .first-user{font-size: 16px;color: #000;background-color: #90BD8C;
+                    .first-user{font-size: 16px;color: #000;background-color: #8CA0BD;
                     transition: background-color 0.3s, box-shadow 0.3s;}
                     .first-user:hover {background-color: #66AFFF;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
                   "))),
@@ -366,7 +366,7 @@ app_ui <- function(request) {
                 textOutput("data_size"),
                 tags$head(
                   tags$style(HTML("
-                    .dataTables_wrapper {background-color: #f8fcf8;border-color: #90BD8C;padding: 10px;border-radius: 5px;}
+                    .dataTables_wrapper {background-color: #f8fcf8;border-color: #8CA0BD;padding: 10px;border-radius: 5px;}
                     .dataTables_wrapper table.dataTable tbody tr:nth-child(odd) {background-color: #f3faf3;}
                     .dataTables_wrapper table.dataTable tbody tr:nth-child(even) {background-color: #fff;}
                   "))
@@ -403,7 +403,7 @@ app_ui <- function(request) {
               .nav-tabs {background-color: #D9EDD8;                  /* Background color - tab headers */}
               .nav-tabs > li > a {color: #5b5b5b;font-size: 16px;           /* Text color - tab headers */
                 border: 1px solid #D9EDD8;border-radius: 4px;}
-              .nav-tabs > li > a:hover {background-color: #90BD8C;         /* Hover color - tab headers */
+              .nav-tabs > li > a:hover {background-color: #8CA0BD;         /* Hover color - tab headers */
                 color: #000;}
               .nav-tabs > li.active > a {background-color: #f3faf3;    /* Background color - active tab */
                 color: #000;border: 1px solid #D9EDD8;border-bottom-color: transparent;}
@@ -879,8 +879,8 @@ app_ui <- function(request) {
                 div(
                   tagList(
                     tags$head(
-                      tags$style(HTML(".site-updates-wrapper table {background-color: #f3faf3;border-top: 2px solid #90BD8C;}
-                        .site-updates-wrapper table thead th, .site-updates-wrapper table td {border: 2px solid #90BD8C;}
+                      tags$style(HTML(".site-updates-wrapper table {background-color: #f3faf3;border-top: 2px solid #8CA0BD;}
+                        .site-updates-wrapper table thead th, .site-updates-wrapper table td {border: 2px solid #8CA0BD;}
                         .site-updates-wrapper table tbody tr:nth-child(odd) {background-color: #f3faf3;}
                         .site-updates-wrapper table tbody tr:nth-child(even) {background-color: #ffffff;}
                       "))
@@ -921,7 +921,7 @@ app_ui <- function(request) {
               tags$style(HTML("
                 .faq-answer {display: none;padding-left: 10px;font-size: 18px;}
                 .faq-question {cursor: pointer;padding: 7px;border: 1px solid
-                  #90BD8C;background-color: #F5F8FF;font-size: 18px;}
+                  #8CA0BD;background-color: #F5F8FF;font-size: 18px;}
               ")),
               tags$script(HTML('
                 $(document).on("click", ".faq-question", function() {
