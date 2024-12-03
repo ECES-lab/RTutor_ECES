@@ -753,7 +753,15 @@ app_server <- function(input, output, session) {
         elementId = "save_api_button",
         tooltip = "Save to a local file called api_key.txt. Restart RStudio to use it.",
         theme = "light-border"
-      )
+      ),
+      tags$script(HTML("
+      $(document).on('click', '#save_api_button', function() {
+      var apiKey = $('#api_key_input').val();
+      if (apiKey) {
+        Shiny.setInputValue('save_api_key', apiKey);
+        }
+      });
+    "))
     )
   })
 
@@ -774,12 +782,23 @@ app_server <- function(input, output, session) {
 
   # only save key, if app is running locally.
   observeEvent(input$save_api_button, {
-    req(input$save_api_button)
-    req(input$api_key)
-    writeLines(input$api_key, "api_key.txt")
-  })
+    #req(input$save_api_button)
+    #req(input$api_key)
+    #writeLines(input$api_key, "api_key.txt")
+    tryCatch({
+    write.table(
+      input$save_api_key, 
+      file = "api_key.txt", 
+      quote = FALSE, 
+      col.names = FALSE, 
+      row.names = FALSE
+    )
+      showNotification("API key saved successfully!", type = "message")
+      }, error = function(e) {
+    showNotification("Error saving API key", type = "error")
+  })    
+})
 
-  # only save key, if app is running locally.
   observeEvent(input$submit_button, {
     # if too short, do not send.
     if (nchar(input$input_text) < min_query_length) {
