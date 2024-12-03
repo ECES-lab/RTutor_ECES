@@ -784,7 +784,7 @@ app_server <- function(input, output, session) {
   # })
 
   # only save key, if app is running locally.
-  observeEvent(input$save_api_key, {
+  observeEvent(input$save_api_button, {
     #req(input$save_api_button)
     #req(input$api_key)
     #writeLines(input$api_key, "api_key.txt")
