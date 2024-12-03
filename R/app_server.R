@@ -455,8 +455,8 @@ app_server <- function(input, output, session) {
   output$change_temperature <- renderUI({
     tagList(
       tags$style(HTML("
-      .irs--shiny .irs-bar {border-top: 1px solid #90BD8C;border-bottom: 1px solid #90BD8C;background: #8fca89;}
-      .irs--shiny .irs-single {background-color: #8fca89; color: #000}
+      .irs--shiny .irs-bar {border-top: 1px solid #8CAABD;border-bottom: 1px solid #8CAABD;background: #89B8CA;}
+      .irs--shiny .irs-single {background-color: #89B8CA; color: #000}
     ")),
       sliderInput(
         inputId = "temperature",
