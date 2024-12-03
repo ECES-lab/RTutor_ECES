@@ -790,7 +790,7 @@ app_server <- function(input, output, session) {
     #writeLines(input$api_key, "api_key.txt")
     tryCatch({
     write.table(
-      input$save_api_key, 
+      input$api_key,
       file = "api_key.txt", 
       quote = FALSE, 
       col.names = FALSE, 
