@@ -24,6 +24,9 @@ app_server <- function(input, output, session) {
   } else { # local
     options(shiny.maxRequestSize = 10000 * 1024^2) # 10 GB
   }
+  if (file.exists("api_key.txt")) {
+  api_key <- readLines("api_key.txt", warn = FALSE)
+  }
 
   if(dev.cur() == 1){
     pdf(NULL) #otherwise, base R plots sometimes do not show.
