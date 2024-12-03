@@ -366,8 +366,8 @@ app_ui <- function(request) {
                 textOutput("data_size"),
                 tags$head(
                   tags$style(HTML("
-                    .dataTables_wrapper {background-color: #f8fcf8;border-color: #8CA0BD;padding: 10px;border-radius: 5px;}
-                    .dataTables_wrapper table.dataTable tbody tr:nth-child(odd) {background-color: #f3faf3;}
+                    .dataTables_wrapper {background-color: #F8FAFC ;border-color: #8CA0BD;padding: 10px;border-radius: 5px;}
+                    .dataTables_wrapper table.dataTable tbody tr:nth-child(odd) {background-color: #F3F7FA;}
                     .dataTables_wrapper table.dataTable tbody tr:nth-child(even) {background-color: #fff;}
                   "))
                 ),
@@ -400,13 +400,13 @@ app_ui <- function(request) {
         tabsetPanel(
           tags$head(
             tags$style(HTML("
-              .nav-tabs {background-color: #D9EDD8;                  /* Background color - tab headers */}
+              .nav-tabs {background-color: #D8E7ED;                  /* Background color - tab headers */}
               .nav-tabs > li > a {color: #5b5b5b;font-size: 16px;           /* Text color - tab headers */
-                border: 1px solid #D9EDD8;border-radius: 4px;}
+                border: 1px solid #D8E7ED;border-radius: 4px;}
               .nav-tabs > li > a:hover {background-color: #8CA0BD;         /* Hover color - tab headers */
                 color: #000;}
-              .nav-tabs > li.active > a {background-color: #f3faf3;    /* Background color - active tab */
-                color: #000;border: 1px solid #D9EDD8;border-bottom-color: transparent;}
+              .nav-tabs > li.active > a {background-color: #F3F7FA;    /* Background color - active tab */
+                color: #000;border: 1px solid #D8E7ED;border-bottom-color: transparent;}
             "))
           ),
 
@@ -879,9 +879,9 @@ app_ui <- function(request) {
                 div(
                   tagList(
                     tags$head(
-                      tags$style(HTML(".site-updates-wrapper table {background-color: #f3faf3;border-top: 2px solid #8CA0BD;}
+                      tags$style(HTML(".site-updates-wrapper table {background-color: #F3F7FA;border-top: 2px solid #8CA0BD;}
                         .site-updates-wrapper table thead th, .site-updates-wrapper table td {border: 2px solid #8CA0BD;}
-                        .site-updates-wrapper table tbody tr:nth-child(odd) {background-color: #f3faf3;}
+                        .site-updates-wrapper table tbody tr:nth-child(odd) {background-color: #F3F7FA;}
                         .site-updates-wrapper table tbody tr:nth-child(even) {background-color: #ffffff;}
                       "))
                     ),
