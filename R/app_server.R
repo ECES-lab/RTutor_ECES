@@ -784,19 +784,28 @@ app_server <- function(input, output, session) {
   # })
 
   # only save key, if app is running locally.
-  observeEvent(input$save_api_button, {
+  observeEvent(input$save_api_key, {
     #req(input$save_api_button)
     #req(input$api_key)
     #writeLines(input$api_key, "api_key.txt")
+    
+    
     tryCatch({
+      print(paste("API Key to save:", input$save_api_key))
+     if (!is.null(input$save_api_key) && input$save_api_key != "") {
     write.table(
-      input$api_key,
+      input$save_api_key,
       file = "api_key.txt", 
       quote = FALSE, 
       col.names = FALSE, 
       row.names = FALSE
     )
-      showNotification("API key saved successfully!", type = "message")
+       showNotification("API key saved successfully!", type = "message")
+     }else {
+      showNotification("API key is empty", type = "error")
+    }
+      
+      
       }, error = function(e) {
     showNotification("Error saving API key", type = "error")
   })    
