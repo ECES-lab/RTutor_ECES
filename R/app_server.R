@@ -1074,13 +1074,13 @@ app_server <- function(input, output, session) {
 
   output$openAI <- renderText({
     req(openAI_response()$cmd)
-    res <- logs$raw
+    #res <- logs$raw
     # Replace multiple newlines with just one.
     #res <- gsub("\n+", "\n", res)
     # Replace emplty lines,  [ ]{0, }--> zero or more space
     #res <- gsub("^[ ]{0, }\n", "", res)
-    res <- gsub("```", "", res)
-
+    #res <- gsub("```", "", res)
+    return("")
   })
 
  # Defining & initializing the reactiveValues object
@@ -1465,7 +1465,8 @@ app_server <- function(input, output, session) {
 
   output$console_output <- renderText({
     req(!code_error())
-    paste(run_result()$console_output, collapse = "\n")
+    #paste(run_result()$console_output, collapse = "\n")
+    return("")
   })
 
   output$result_plot <- renderPlot({
