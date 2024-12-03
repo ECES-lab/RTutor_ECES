@@ -793,9 +793,9 @@ app_server <- function(input, output, session) {
     
     tryCatch({
       print(paste("API Key to save:", input$api_key))
-     if (!is.null(input$save_api_key) && input$save_api_key != "") {
+     if (!is.null(input$api_key) && input$api_key != "") {
     write.table(
-      input$save_api_key,
+      input$api_key,
       file = "api_key.txt", 
       quote = FALSE, 
       col.names = FALSE, 
