@@ -26,7 +26,6 @@ app_server <- function(input, output, session) {
   }
   if (file.exists("api_key.txt")) {
   api_key <- readLines("api_key.txt", warn = FALSE)
-  print(api_key)
   }
 
   if(dev.cur() == 1){
@@ -705,7 +704,7 @@ app_server <- function(input, output, session) {
   # api key for the session
   api_key_session <- reactive({
 
-    api_key <- api_key_global
+    api_key <- api_key
     session_key_source <- key_source
 
     if(nzchar(input$api_key)) {   # check for a character vector of non-zero length
