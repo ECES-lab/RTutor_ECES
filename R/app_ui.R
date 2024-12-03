@@ -140,7 +140,7 @@ app_ui <- function(request) {
                 actionButton("data_edit_modal", "Data Types"),
                 align = "left",
                 tags$head(tags$style(
-                  "#data_edit_modal{font-size: 18px;color: #000;background-color: #F6FFF5;border-color: #c1d9f7}"
+                  "#data_edit_modal{font-size: 18px;color: #000;background-color: #F5F8FF;border-color: #c1d9f7}"
                 ))
               )
             ),
@@ -168,7 +168,7 @@ app_ui <- function(request) {
                   div(
                     actionButton("submit_button", strong("Submit")),
                     tags$head(tags$style(
-                      "#submit_button{font-size: 18px;color: blue;background-color: #F6FFF5;border-color: #c1d9f7;}"
+                      "#submit_button{font-size: 18px;color: blue;background-color: #F5F8FF;border-color: #c1d9f7;}"
                     )),
                     tippy::tippy_this(
                       "submit_button",
@@ -180,7 +180,7 @@ app_ui <- function(request) {
                     # Reset Button
                     actionButton(inputId = "reset_button", label = strong("Reset")),
                     tags$head(tags$style(
-                      "#reset_button{font-size: 18px;color: red;background-color: #F6FFF5;border-color: #c1d9f7;}"
+                      "#reset_button{font-size: 18px;color: red;background-color: #F5F8FF;border-color: #c1d9f7;}"
                     )),
                     tippy::tippy_this(
                       "reset_button",
@@ -195,7 +195,7 @@ app_ui <- function(request) {
             #     width = 4,
             #     actionButton("api_button", "Settings"),
             #     tags$head(tags$style(
-            #           "#api_button{color: black;background-color: #F6FFF5;border-color: #90BD8C;}"
+            #           "#api_button{color: black;background-color: #F5F8FF;border-color: #90BD8C;}"
             #     )),
             #   ),
             #   column(
@@ -220,7 +220,7 @@ app_ui <- function(request) {
                     tags$style(HTML("
                       #ask_question {
                         width: 100%;
-                        background-color: #F6FFF5;
+                        background-color: #F5F8FF;
                         border-color: #90BD8C;
                       }
                     "))
@@ -921,7 +921,7 @@ app_ui <- function(request) {
               tags$style(HTML("
                 .faq-answer {display: none;padding-left: 10px;font-size: 18px;}
                 .faq-question {cursor: pointer;padding: 7px;border: 1px solid
-                  #90BD8C;background-color: #F6FFF5;font-size: 18px;}
+                  #90BD8C;background-color: #F5F8FF;font-size: 18px;}
               ")),
               tags$script(HTML('
                 $(document).on("click", ".faq-question", function() {
@@ -1228,7 +1228,7 @@ app_ui <- function(request) {
       tabPanel(title = "Terms of Use", value = "terms_of_use", terms_of_use_content()),
 
       footer = div(
-        style = "position: fixed;bottom: 0;width: 100%;background-color: #F6FFF5;padding: 10px;text-align: center;",
+        style = "position: fixed;bottom: 0;width: 100%;background-color: #F5F8FF;padding: 10px;text-align: center;",
         span("© 2024 Orditus LLC | "),
         actionLink(inputId = "ppolicy", "Privacy Policy"),
         span(" | "),
