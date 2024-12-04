@@ -1497,7 +1497,8 @@ app_server <- function(input, output, session) {
 
   output$console_output <- renderText({
     req(!code_error())
-    #paste(run_result()$console_output, collapse = "\n")
+    #this line shows the code console
+    paste(run_result()$console_output, collapse = "\n")
     return("")
   })
 
