@@ -1499,7 +1499,7 @@ app_server <- function(input, output, session) {
     req(!code_error())
     #this line shows the code console
     paste(run_result()$console_output, collapse = "\n")
-    return("")
+    #return("")
   })
 
   output$result_plot <- renderPlot({
